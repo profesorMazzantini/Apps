@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aplicaciones creadas por estudiantes en el taller de Tecnología.">
+  <title>Apps del Taller</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f3f6fb;
+      color: #172033;
+      line-height: 1.5;
+    }
+    header {
+      background: linear-gradient(135deg, #174ea6, #3978d5);
+      color: white;
+      text-align: center;
+      padding: 42px 18px 36px;
+    }
+    header h1 { margin: 0 0 10px; font-size: clamp(1.8rem, 5vw, 2.6rem); }
+    header p { margin: 0 auto; max-width: 620px; color: #eaf1ff; }
+    main { width: min(920px, 92%); margin: 28px auto 42px; }
+    .intro { text-align: center; margin-bottom: 24px; }
+    .apps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+    .app-card {
+      background: white;
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 5px 18px rgba(20, 45, 85, .08);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .app-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: #e8f0fe;
+      font-size: 30px;
+      margin-bottom: 14px;
+    }
+    .app-card h2 { margin: 0 0 8px; font-size: 1.25rem; }
+    .app-card p { margin: 0 0 20px; color: #5b6475; flex-grow: 1; }
+    .download {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding: 12px 16px;
+      border-radius: 10px;
+      background: #1769d2;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .download:hover, .download:focus { background: #0f4fa7; }
+    .note {
+      margin-top: 24px;
+      background: #fff8e6;
+      border: 1px solid #f1d58b;
+      border-radius: 12px;
+      padding: 14px 16px;
+      color: #614b12;
+      font-size: .95rem;
+    }
+    footer { text-align: center; color: #687386; padding: 0 16px 24px; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Apps del Taller</h1>
+    <p>Explorá y descargá las aplicaciones creadas en el Proyecto...</p>
+  </header>
+
+  <main>
+    <div class="intro">
+      <h2>Aplicaciones disponibles</h2>
+      <p>Elegí una aplicación y descargala en tu dispositivo Android.</p>
+    </div>
+
+    <section class="apps" aria-label="Listado de aplicaciones">
+      <article class="app-card">
+        <div class="app-icon" aria-hidden="true">💡</div>
+        <h2>La Fidelidad</h2>
+        <p>Una app que...</p>
+        <a class="download" href="app1.apk" download>Descargar APK</a>
+      </article>
+
+      <article class="app-card">
+        <div class="app-icon" aria-hidden="true">📍</div>
+        <h2>La amistad</h2>
+        <p>Una app que obtiene...</p>
+        <a class="download" href="app1.apk" download>Descargar APK</a>
+      </article>
+    </section>
+
+    <div class="note">
+      <strong>Importante:</strong> estas aplicaciones son archivos APK para Android. Al instalar una app descargada desde una página web, el teléfono puede mostrar una advertencia de seguridad. Instalá únicamente aplicaciones de confianza.
+    </div>
+  </main>
+
+  <footer>Proyecto educativo · Taller de Tecnología</footer>
+</body>
+</html>
